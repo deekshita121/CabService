@@ -3,15 +3,9 @@ package com.capgemini.cabinvoicegenerator;
 
 public class InvoiceGenerator 
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
+    private static final double FARE_PER_KILOMETER = 10;
 
 	public double calculateFare(double distance, int time) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	 
+        return distance * FARE_PER_KILOMETER + time;
+    }
 }
